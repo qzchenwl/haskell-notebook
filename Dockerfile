@@ -14,5 +14,4 @@ RUN cd /tmp/IHaskell && stack setup && stack build && stack install
 RUN ihaskell install
 RUN rm -rf /tmp/IHaskell
 
-WORKDIR /notebooks
 CMD ["stack", "exec", "--", "start-notebook.sh"]
